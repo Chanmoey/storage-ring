@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/storagering?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: 12345678
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
