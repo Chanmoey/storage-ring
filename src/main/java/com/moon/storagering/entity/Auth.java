@@ -3,7 +3,6 @@ package com.moon.storagering.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Date;
@@ -16,25 +15,18 @@ import java.util.UUID;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
-public class Bucket {
+public class Auth {
 
     @Id
     private String id;
 
     private String bucketName;
 
-    private Date createTime;
+    private String token;
 
-    private String detail;
+    private Date authTime;
 
-    private String creator;
-
-    public Bucket(String bucketName, String creator, String detail) {
+    public void generateId() {
         this.id = UUID.randomUUID().toString().replace("-", "");
-        this.bucketName = bucketName;
-        this.creator = creator;
-        this.detail = detail;
-        this.createTime = new Date();
     }
 }
