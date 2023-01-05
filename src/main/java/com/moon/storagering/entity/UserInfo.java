@@ -28,4 +28,6 @@ public class UserInfo {
     private Date createTime;
 
     private String email;
+
+    private int level;
 }

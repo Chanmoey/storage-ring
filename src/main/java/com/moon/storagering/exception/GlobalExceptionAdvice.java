@@ -2,6 +2,7 @@ package com.moon.storagering.exception;
 
 import com.moon.storagering.common.UnifyResponse;
 import com.moon.storagering.exception.bussness.BusinessException;
+import com.moon.storagering.exception.bussness.FileSystemException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
